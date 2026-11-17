@@ -1,4 +1,4 @@
-// Rules for Login
+// Login rules
 const email = "test@example.com";
 const password = "Secret123";
 const attempts = 0;
