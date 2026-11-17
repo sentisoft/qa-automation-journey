@@ -3,7 +3,6 @@ const email = "test@example.com";
 const password = "Secret123";
 const attempts = 0;
 
-const hasCredentials = email !== "" || password !== "";
 const isMissingCredentials = email === "" || password === "";
 const isLocked = attempts >= 3;
 
