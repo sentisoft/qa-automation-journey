@@ -1,17 +1,15 @@
 // Pass threshold
 
 const passedText = "80";
-const failedText = "20"
+const failedText = "20";
 const passed = Number(passedText);
 const failed = Number(failedText);
 const total = passed + failed;
+const passRate = (passed / total) * 100;
 
-const buildPass = passed >= 80;
-
-if (buildPass) {
-    console.log(`Pass rate: ${(passed / total) * 100}%`);
-    console.log(`Build: PASS`);
+console.log(`Pass rate: ${passRate}%`);
+if (passRate >= 80) {
+    console.log("Build: PASS");
 } else {
-    console.log(`Pass rate: ${(passed / total) * 100}%`);
-    console.log(`Build: FAIL`);
+    console.log("Build: FAIL");
 }
